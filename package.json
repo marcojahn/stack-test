@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "build": "rimraf ./dist && parcel build ./src/index.html",
-    "start": "parcel ./src/index.html",
+    "start": "parcel ./src/index.html --no-cache",
     "dev": "concurrently -r \"tsc --noEmit --watch\" \"npm:start\""
   },
   "repository": {
@@ -19,6 +19,7 @@
   },
   "homepage": "https://github.com/marcojahn/stack-test#readme",
   "dependencies": {
+    "antd": "^3.22.1",
     "react": "^16.9.0",
     "react-dom": "^16.9.0",
     "react-router-dom": "^5.0.1"
@@ -28,6 +29,7 @@
     "@types/react": "^16.9.2",
     "@types/react-dom": "^16.9.0",
     "concurrently": "^4.1.2",
+    "less": "^3.10.3",
     "parcel": "^1.12.3",
     "rimraf": "^3.0.0",
     "typescript": "^3.5.3"

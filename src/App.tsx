@@ -3,10 +3,15 @@ import AppMenu from "./components/AppMenu";
 
 import { BrowserRouter as Router, Route } from "react-router-dom";
 
+import { Button } from "antd";
+
 const Home = () => (
   <div>
     <AppMenu />
     Home Page
+    <br />
+    <br />
+    <Button type="primary">ant.design Button</Button>
   </div>
 );
 const DemoComponentOne = React.lazy(() =>
